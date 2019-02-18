@@ -7,7 +7,7 @@ Charakterystyka systemu operacyjnego
 | Charakterystyka | wartość           | komentarzu |
 | ------------- |:-------------:| -----:|
 | nazwa      | linux | centos 7 minimal |
-| program (parametry sieci)      | niewiem |  |
+| program (parametry sieci)      | terminal |  |
 
 
 Konfiguracja połączenia sieciowego
