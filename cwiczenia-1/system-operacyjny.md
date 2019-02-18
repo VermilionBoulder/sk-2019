@@ -22,12 +22,6 @@ Konfiguracja połączenia sieciowego
 | DNS 2      | 10.10.0.4 |  |
 
 Schemat sieci
--------------
+------------- 
+![schemat](schemat.png)
 
-aby załączyć obrazek 
-
-```markdown
-![alt schemat](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png)![alt schemat](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png)
-
-![alt schemat](images/my-network-schema.png)
-```
