@@ -4,7 +4,7 @@ System operacyjny w środowisku sieciowym
 Charakterystyka systemu operacyjnego
 ------------------------------------
 
-| Charakterystyka | wartość           | komentarzu |
+| Charakterystyka | wartość           | komentarz |
 | ------------- |:-------------:| -----:|
 | nazwa      | linux | centos 7 minimal |
 | program (parametry sieci)      | terminal |  |
@@ -13,7 +13,7 @@ Charakterystyka systemu operacyjnego
 Konfiguracja połączenia sieciowego
 ----------------------------------
 
-| Parametr | wartość           | komentarzu |
+| Parametr | wartość           | komentarz |
 | ------------- |:-------------:| -----:|
 | Adres IP      | 10.0.2.15 | przydzielony przez DHCP |
 | Maska podsieci      | 24 | 11000b |
