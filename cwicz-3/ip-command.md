@@ -30,6 +30,9 @@ ip
 |   ``addr``    |                               | informacje o adresacji i własnościach interfejsów |
 |               |   ``ip addr``                 | informacja o wszystkich interfejsach              |
 |               |   ``ip addr show dev enp0s3`` | informacja o konkretnym interfejsie               |
+|   ``addr``    |   ``ip addr add <ip> enp0s3`` | dodaj adres do urządzenia                         |
+|   ``addr``    |   ``ip addr del <ip> enp0s3`` | usuń adres z nal. do urządzenia                   |
+|               |   ``ip addr show dev enp0s3`` | informacja o konkretnym interfejsie               |
 |   ``link``    |                               |  |
 |               |   ``ip link set enp0s3 down`` | wyłącza interfejs enp0s3                          |
 |               |   ``ip link set enp0s3 up``   | włącza interfejs enp0s3                           |
