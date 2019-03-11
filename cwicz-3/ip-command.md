@@ -25,7 +25,9 @@ ip
 -------------------------
 | subcommand    |  polecenie   | opis  |
 | ------------- |:-------------| :---------------| 
-|   ``addr``    |                               | infirmacje o adresacji i własnościach interfejsów |
+|   ``addr``    |   ``up <interface>``          | interfejs up                                      |
+|   ``addr``    |   ``down <interface>``        | interfejs down                                    |
+|   ``addr``    |                               | informacje o adresacji i własnościach interfejsów |
 |               |   ``ip addr``                 | informacja o wszystkich interfejsach              |
 |               |   ``ip addr show dev enp0s3`` | informacja o konkretnym interfejsie               |
 |   ``link``    |                               |  |
