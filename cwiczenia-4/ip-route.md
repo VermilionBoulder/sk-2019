@@ -14,7 +14,13 @@ ip
 | subcommand    |  polecenie   | opis  |
 | ------------- |:-------------| :---------------| 
 |   ``route``    |                               | |
-|               |   ``ip route add``             | |
+|   ``ip route add default via <IP>``            |   ``ip route add``             | dodaje domyślną trase |
+|  ``ip route show`` | ``ip route`` | pokazuje wszystkie trasy |
+|  ``ip route get <IP>`` | ``ip route`` | pokazuje którędy pójdzie ruch na dany adres |
+|  ``cat /proc/sys/net/ipv4/ip_forward`` | | pokaż czy system wspiera przekierowywanie |
+|  ``ip route del`` | | usuń trase |
+|
+
 
 
 Zadanie
