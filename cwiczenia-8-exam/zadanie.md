@@ -1,8 +1,6 @@
 Zadanie 1
 ---------
 
-![zadanie 1](zadanie-1.svg)
-
 1. Zaprojektuj oraz przygotuj prototyp rozwiązania z wykorzystaniem oprogramowania ``VirtualBox`` lub podobnego. 
 Zaproponuj rozwiązanie spełniające poniższe wymagania:
    * Usługodawca zapewnia domunikację z siecią internet poprzez interfejs ``eth0`` ``PC0``
@@ -11,6 +9,7 @@ Zaproponuj rozwiązanie spełniające poniższe wymagania:
    * Przygotuj dokumentację powyższej architektury w formie graficznej w programie ``DIA``
  
 ---------
+
 **Rozwiązanie**
 ![network image](network.png)
 Konfiguracja sieci:
@@ -28,6 +27,7 @@ Konfiguracja maszyn wirtualnych:
     * enp0s3 - ``172.22.128.100/19``
   
 Komendy:
+
 **PC0**
 
   | Komenda                                 | Komentarz                                                 |
