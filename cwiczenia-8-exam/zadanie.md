@@ -29,6 +29,7 @@ Konfiguracja maszyn wirtualnych:
   
 Komendy:
 1. PC0
+
   | Komenda                                 | Komentarz                                                 |
   |-----------------------------------------|-----------------------------------------------------------|
   | ``ip a add 172.22.160.1/23 dev enp0s3`` | przypisujemy adresy routerowi na sieciach LAN1 i LAN2     |
