@@ -13,6 +13,8 @@ Zaproponuj rozwiązanie spełniające poniższe wymagania:
 ---------
 **Rozwiązanie**
 
+![network image](network.png)
+
 Konfiguracja sieci:
 1. LAN1 - 172.22.160.0/23
 2. LAN2 - 172.22.128.0/19
