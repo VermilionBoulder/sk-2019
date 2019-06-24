@@ -28,14 +28,28 @@ Konfiguracja maszyn wirtualnych:
     * enp0s3 - ``172.22.128.100/19``
   
 Komendy:
-1. PC0
+**PC0**
 
   | Komenda                                 | Komentarz                                                 |
-  |-----------------------------------------|-----------------------------------------------------------|
-  | ``ip a add 172.22.160.1/23 dev enp0s3`` | przypisujemy adresy routerowi na sieciach LAN1 i LAN2     |
+  |:---------------------------------------:|-----------------------------------------------------------|
+  | ``ip a add 172.22.160.1/23 dev enp0s3`` | Przypisujemy adresy routerowi na sieciach LAN1 i LAN2     |
   | ``ip a add 172.22.128.1/19 dev enp0s8`` |                                                           |
-  | ``ip link set <dev> up``                | włączamy karty sieciowe                                   | 
+  | ``ip link set <dev> up``                | Włączamy karty sieciowe                                   | 
   | ``dhclient -r``                         |                                                           |
-  | ``dhclient``                            | przypisujemy adres karcie sieciowej enp0s9 za pomocą DHCP |
-  | ``ip route``                            | wyświetla obecny routing                                  |
-  | ``nano /etc/network/interfaces``        |                                                           |
+  | ``dhclient``                            | Przypisujemy adres karcie sieciowej enp0s9 za pomocą DHCP |
+  | ``ip route``                            | Wyświetla obecny routing                                  |
+  | ``nano /etc/network/interfaces``        | Zmieniamy ostawienie sieci NAT z ``auto``/``static`` na ``DHCP`` |
+  | ``nano /etc/sysctl.conf``               | Usuwamy komentarz z linii zaw. ``ip_forward``             |
+  | ``echo 1 > /proc/sys/net/ipv4/ip_forward`` | |
+  | ``iptables -t nat -A POSTROUTING -s 172.22.160.0/23 -o enp0s9 -j MASQUERADE`` | routuje dane clientów do interfejsu NAT |
+  
+  
+  
+**PC1** / **PC2**
+
+  | Komenda                                 | Komentarz                                                 |
+  |:---------------------------------------:|-----------------------------------------------------------|
+  | ``ip a add 172.22.160.100/23``          | Przypisujemy adres |
+  | ``ip link set enp0s3 up``               | |
+  | ``ip route add default via 172.22.160.1`` | Routujemy ruch |
+  | ``ping google.com``                     | Sprawdzamy czy dane przechodzą do internetu |
