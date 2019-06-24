@@ -18,12 +18,17 @@ Konfiguracja sieci:
 
 Konfiguracja maszyn wirtualnych:
 1. PC0
+  * LAN1
     * enp0s3 - ``172.22.160.1/23``
+  * LAN2
     * enp0s8 - ``172.22.128.1/19``
+  * NAT
     * enp0s9 - ustalone przez DHCP (NAT)
 2. PC1
+  * LAN1
     * enp0s3 - ``172.22.160.100/23``
 3. PC2
+  * LAN2
     * enp0s3 - ``172.22.128.100/19``
   
 Komendy:
