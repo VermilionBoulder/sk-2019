@@ -29,12 +29,12 @@ Konfiguracja maszyn wirtualnych:
   
 Komendy:
 1. PC0
-  |Komenda|Komentarz|
-  |-----------------------------------------|-------------------------------------------------------|
-  | ``ip a add 172.22.160.1/23 dev enp0s3`` | przypisujemy adresy routerowi na sieciach LAN1 i LAN2 |
-  | ``ip a add 172.22.128.1/19 dev enp0s8`` | |
-  | ``ip link set <dev> up`` | włączamy karty sieciowe |
-  | ``dhclient -r`` | |
-  | ``dhclient`` | przypisujemy adres karcie sieciowej enp0s9 za pomocą DHCP |
-  | ``ip route`` | wyświetla obecny routing |
-  | ``nano /etc/network/interfaces`` | |
+  | Komenda                                 | Komentarz                                                 |
+  |-----------------------------------------|-----------------------------------------------------------|
+  | ``ip a add 172.22.160.1/23 dev enp0s3`` | przypisujemy adresy routerowi na sieciach LAN1 i LAN2     |
+  | ``ip a add 172.22.128.1/19 dev enp0s8`` |                                                           |
+  | ``ip link set <dev> up``                | włączamy karty sieciowe                                   | 
+  | ``dhclient -r``                         |                                                           |
+  | ``dhclient``                            | przypisujemy adres karcie sieciowej enp0s9 za pomocą DHCP |
+  | ``ip route``                            | wyświetla obecny routing                                  |
+  | ``nano /etc/network/interfaces``        |                                                           |
