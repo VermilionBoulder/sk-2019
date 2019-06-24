@@ -49,7 +49,7 @@ Komendy:
 
   | Komenda                                 | Komentarz                                                 |
   |:---------------------------------------:|-----------------------------------------------------------|
-  | ``ip a add 172.22.160.100/23``          | Przypisujemy adres |
+  | ``ip a add {ip}``          | Przypisujemy adres |
   | ``ip link set enp0s3 up``               | |
-  | ``ip route add default via 172.22.160.1`` | Routujemy ruch |
+  | ``ip route add default via {ip routera}`` | Routujemy ruch |
   | ``ping google.com``                     | Sprawdzamy czy dane przechodzą do internetu |
